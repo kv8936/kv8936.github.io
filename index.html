@@ -1,148 +1,188 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Kumar Viswajeet Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kumar Viswajeet | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0d1b2a;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about, .projects, .footer {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .about img {
+      max-width: 250px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .about p {
+      margin-bottom: 20px;
+    }
+    .resume-button {
+      display: inline-block;
+      background: #0077cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .resume-button:hover {
+      background: #005fa3;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .project-card h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .project-card a {
+      color: #0077cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kumar Viswajeet</h1>
+    <p>Data Analyst | Python, SQL, Tableau, Excel</p>
+  </header>
 
-		<!-- Header -->
-		<section id="header">
-			<div class="inner">
-				<span class="icon solid major fa-cloud"></span>
-				<h1>Hi, I'm <strong>Kumar Viswajeet</strong></h1>
-				<p>I am a Data Analyst with a passion for using data to drive business decisions.<br />
-				My portfolio showcases my experience in SQL, Excel, Tableau, and Python.</p>
-				<ul class="actions special">
-					<li><a href="#one" class="button scrolly">PORTFOLIO</a></li>
-				</ul>
-			</div>
-		</section>
+  <section class="section about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/IMG_1659.JPG" alt="Kumar Viswajeet Photo">
+      <div class="about-text">
+        <p>I’m a Data Analyst with a Master's in Data Analytics. My background includes sales forecasting, dashboard development, and database design. I enjoy solving business problems using data and continuously expanding my technical skills in SQL, Python, Excel, and Tableau.</p>
+        <a class="resume-button" href="pdf/CV_Kumar.pdf" target="_blank">View Resume</a>
+      </div>
+    </div>
+  </section>
 
-		<!-- One: ABOUT ME -->
-		<section id="one" class="main style1">
-			<div class="container">
-				<div class="row gtr-150">
-					<div class="col-6 col-12-medium">
-						<header class="major">
-							<h2>ABOUT ME</h2>
-						</header>
-						<p>
-							I’m a Data Analyst with a Master's in Data Analytics. My background includes sales forecasting, dashboard development, and database design. I enjoy solving business problems using data and continuously expanding my technical skills in SQL, Python, Excel, and Tableau.
-						</p>
-						<ul class="actions">
-							<li><a href="pdf/CV_Kumar.pdf" target="_blank" class="button">View Resume</a></li>
-						</ul>
-					</div>
-					<div class="col-6 col-12-medium imp-medium">
-						<span class="image fit"><img src="images/IMG_1659.JPG" alt="Profile picture of Kumar Viswajeet" /></span>
-					</div>
-				</div>
-			</div>
-		</section>
+  <section class="section projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/movie.jpg" alt="Movie Rental DB" />
+        <h3>Movie Rental Database</h3>
+        <p>SQL database design and optimization for a movie rental service.</p>
+        <a href="https://github.com/kv8936/SQL">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/tableau6.png" alt="Tableau Dashboards" />
+        <h3>Data Visualization</h3>
+        <p>Interactive Tableau dashboards for supermarket and auto industry data.</p>
+        <a href="https://public.tableau.com/app/profile/kumar.viswajeet">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/excel3.png" alt="Excel Project" />
+        <h3>Excel Dashboard</h3>
+        <p>KPI analysis and visualization for business data in Excel.</p>
+        <a href="https://github.com/kv8936/excel/blob/main/excel%20project.xlsx">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/immovir.jfif" alt="Python Movie Correlation" />
+        <h3>Movie Correlation</h3>
+        <p>Python analysis on movie features and performance correlations.</p>
+        <a href="https://github.com/kv8936/python/blob/main/portfolio%20project.ipynb">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/pp.jpeg" alt="Sales Forecasting" />
+        <h3>Sales Forecasting</h3>
+        <p>Machine learning model for predicting future sales based on trends.</p>
+        <a href="https://github.com/kv8936/Predictive_sales_modeling">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/dbb60528-eb93-4fa9-ac64-7f95d0f875ca.png" alt="Urban Mobility Berlin" />
+        <h3>Urban Mobility Insights – Berlin</h3>
+        <p>Visualized and analyzed Berlin’s urban traffic using sensor data and Python. Developed an interactive map and spatial insights using GeoPandas and Folium.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
 
-		<!-- Two: PROJECTS INTRO -->
-		<section id="two" class="main style2">
-			<div class="container">
-				<div class="row gtr-150">
-					<div class="col-6 col-12-medium">
-						<ul class="major-icons">
-							<li><span class="icon solid style1 major fa-code"></span></li>
-							<li><span class="icon solid style2 major fa-bolt"></span></li>
-							<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-							<li><span class="icon solid style4 major fa-cog"></span></li>
-							<li><span class="icon solid style5 major fa-desktop"></span></li>
-							<li><span class="icon solid style6 major fa-calendar"></span></li>
-						</ul>
-					</div>
-					<div class="col-6 col-12-medium">
-						<header class="major">
-							<h2>PROJECTS</h2>
-						</header>
-						<p>This portfolio highlights a variety of projects that reflect my skills in data analysis, visualization, and predictive modeling. Each project shows my ability to uncover insights using tools like Python, SQL, Tableau, and Excel.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Three: PROJECT LIST -->
-		<section id="three" class="main style1 special">
-			<div class="container">
-				<header class="major">
-					<h2>Portfolio PROJECTS</h2>
-				</header>
-				<div class="row gtr-150">
-					<div class="col-4 col-12-medium">
-						<span class="image fit"><img src="images/movie.jpg" alt="" /></span>
-						<h3><b>Database Design of Movie Rental</b></h3>
-						<p>Designed a normalized SQL database for a movie rental business with optimized query performance.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/kv8936/SQL" class="button">View project</a></li>
-						</ul>
-					</div>
-
-					<div class="col-4 col-12-medium">
-						<span class="image fit"><img src="images/tableau6.png" alt="" /></span>
-						<h3><b>Data Visualization</b></h3>
-						<p>Created dashboards using Tableau for supermarket sales and automobile data analysis in India.</p>
-						<ul class="actions special">
-							<li><a href="https://public.tableau.com/app/profile/kumar.viswajeet" class="button">View Project</a></li>
-						</ul>
-					</div>
-
-					<div class="col-4 col-12-medium">
-						<span class="image fit"><img src="images/excel3.png" alt="" /></span>
-						<h3><b>Excel Data Analytics</b></h3>
-						<p>Performed data cleaning and dashboard creation to track KPIs and enable better business decisions.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/kv8936/excel/blob/main/excel%20project.xlsx" class="button">View project</a></li>
-						</ul>
-					</div>
-
-					<div class="col-4 col-12-medium">
-						<span class="image fit"><img src="images/immovir.jfif" alt="" /></span>
-						<h3><b>Movie Correlation in Python</b></h3>
-						<p>Analyzed IMDb-style movie data to identify variable correlations using pandas and visualization tools.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/kv8936/python/blob/main/portfolio%20project.ipynb" class="button">View project</a></li>
-						</ul>
-					</div>
-
-					<div class="col-4 col-12-medium">
-						<span class="image fit"><img src="images/pp.jpeg" alt="" /></span>
-						<h3><b>Sales Forecasting Project</b></h3>
-						<p>Built a predictive model to forecast sales using historical data, EDA, and ML in Python.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/kv8936/Predictive_sales_modeling" class="button">View project</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<section id="footer">
-			<ul class="icons">
-				<li><a href="https://public.tableau.com/app/profile/kumar.viswajeet"><span class="tableau">Tableau</span></a></li>
-				<li><a href="https://www.linkedin.com/in/kumar-viswajeet/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/kv8936" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="mailto:kumarviswajeet6@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Kumar Viswajeet</li><li>Design: <a href="#">Kumar Viswajeet</a></li>
-			</ul>
-		</section>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+  <section class="section footer">
+    <p>&copy; 2025 Kumar Viswajeet</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/kumar-viswajeet/">LinkedIn</a>
+      <a href="https://github.com/kv8936">GitHub</a>
+      <a href="mailto:kumarviswajeet6@gmail.com">Email</a>
+      <a href="https://public.tableau.com/app/profile/kumar.viswajeet">Tableau</a>
+    </div>
+  </section>
+</body>
 </html>
